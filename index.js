@@ -27,5 +27,4 @@ if (require.main === module) {
   console.log("Expecting: false");
   console.log("=>", hasTargetSum([1, 2, 5], 4));
 }
-
-module.exports = hasTargetSum;
+  module.exports = hasTargetSum;
