@@ -1,20 +1,17 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
-
-/* 
-  Write the Big O time complexity of your function here
-*/
-
-/* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
-*/
-
-// You can run `node index.js` to view these console logs
+    for (i = 0; i < array.length; i++) {
+      let x = array[i]
+      for (j = i + 1; j < array.length; j++) {
+        const sum = x + array[j]
+        if (sum === target) {
+          return true
+        }
+      }
+    }
+    return false
+  }
+  
+  
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
