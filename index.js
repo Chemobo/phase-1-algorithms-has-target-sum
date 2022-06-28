@@ -1,16 +1,12 @@
 function hasTargetSum(array, target) {
-    for (i = 0; i < array.length; i++) {
-      let x = array[i]
-      for (j = i + 1; j < array.length; j++) {
-        const sum = x + array[j]
-        if (sum === target) {
-          return true
-        }
+  for (let i = 0; i < array.length; i++) {
+    const targetSum =target - array[i];
+    for (let num = i+1; num < array.length; num++){
+      if(array[num] === targetSum) return true;
       }
-    }
-    return false
   }
-  
+      return false;
+}
   
 if (require.main === module) {
   // add your own custom tests in here
